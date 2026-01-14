@@ -10,6 +10,11 @@ body {
   padding: 8px;
 }
 
+/* 
+Note that title is a h1 object which has default 0.67em margin-top and margin-bottom values.
+The additional top white space is the 8px padding from .card + 0.67em margin-top from .title.
+If I don't specify the margin-bottom, it would margin collapse with a distance of 0.67em.
+*/
 .title {
   background: #e3f4ff;
   margin-bottom: 8px;
@@ -20,12 +25,11 @@ body {
 .content {
   background: #e3f4ff;
   margin-bottom: 8px;
-  padding: 16px 8px;
+  padding: 8px;
 }
 
 .button-container {
   background: #e3f4ff;
-  margin-bottom: 8px;
   padding: 8px;
   text-align: center
 }
